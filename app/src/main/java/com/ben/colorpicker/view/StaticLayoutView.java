@@ -7,6 +7,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
+ *
  * Created by Hui on 2015/10/30.
  */
 public class StaticLayoutView extends View {
@@ -40,7 +41,8 @@ public class StaticLayoutView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-
+        //https://watchs.github.io/2016/12/07/Canvas%E7%9A%84save%E5%92%8Crestore%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3/
+        //save方法和restore方法的详解：作用于坐标系
         canvas.save();
         if (layout != null) {
             layout.draw(canvas, null, null, 0);

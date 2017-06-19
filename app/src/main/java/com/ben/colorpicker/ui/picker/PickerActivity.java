@@ -24,7 +24,8 @@ import com.ben.colorpicker.view.StaticLayoutView;
 import java.io.FileNotFoundException;
 
 
-public class PickerActivity extends SelectPhotoActivity implements View.OnClickListener, MyPhotoViewAttacher.OnColorSelectedListener {
+public class PickerActivity extends SelectPhotoActivity implements View.OnClickListener
+        , MyPhotoViewAttacher.OnColorSelectedListener {
     ImageView lockButton;
     ImageView mImageView;
     MyPhotoViewAttacher mAttacher;
@@ -199,7 +200,8 @@ public class PickerActivity extends SelectPhotoActivity implements View.OnClickL
     }
 
     private StaticLayout getStaticLayout(String string, int viewWidth) {
-        return new StaticLayout(string, textPaint, viewWidth, Layout.Alignment.ALIGN_CENTER, 1.0f, 0f, true);
+        return new StaticLayout(string, textPaint, viewWidth,
+                Layout.Alignment.ALIGN_CENTER, 1.0f, 0f, true);
     }
 
 

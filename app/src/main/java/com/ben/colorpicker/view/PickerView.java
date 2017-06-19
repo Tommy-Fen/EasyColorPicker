@@ -12,6 +12,7 @@ import android.view.View;
 import com.ben.colorpicker.R;
 
 /**
+ *
  * Created by Hui on 2015/10/23.
  */
 public class PickerView extends View {
@@ -69,8 +70,6 @@ public class PickerView extends View {
         mCenterPaint.setAntiAlias(true);
         mCenterPaint.setStyle(Paint.Style.STROKE);
         mCenterPaint.setStrokeWidth(centerCircleWidth);
-
-
     }
 
     @Override
@@ -89,6 +88,7 @@ public class PickerView extends View {
             canvas.drawCircle(mCenterX, mCenterY, centerCircleRadius, mCenterPaint);
         }
     }
+
     public void drawCircle(float cx, float cy,int color){
         isClear = false;
         this.mCenterX = (int) cx;
